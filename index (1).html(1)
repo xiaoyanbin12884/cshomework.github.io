@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人网站</title>
+  <style>
+    /* 全局样式 */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 主页头部样式 */
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+
+    /* 导航栏样式 */
+    nav {
+      background-color: #444;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    /* 分栏样式 */
+    section {
+      padding: 20px;
+    }
+
+    /* 兴趣爱好页面样式 */
+    #hobbies {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    #hobbies div {
+      width: 300px;
+      margin-bottom: 20px;
+    }
+
+    #hobbies img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* 计算机网络课表页面样式 */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid #ccc;
+    }
+
+    /* 调查表页面样式 */
+    form {
+      width: 400px;
+      margin: 0 auto;
+      background-color: #b2e281;
+      padding: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    select {
+      padding: 5px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 8px 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+
+    /* JavaScript演示页面样式 */
+    #js-demo {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 主页头部 -->
+  <header>
+    <img src="your_avatar.jpg" alt="头像">
+    <h1>你的个人身份</h1>
+  </header>
+
+  <!-- 导航栏 -->
+  <nav>
+    <a href="#hobbies">兴趣爱好</a>
+    <a href="#schedule">计算机网络课表</a>
+    <a href="#survey">调查表</a>
+    <a href="#js-demo">JavaScript演示</a>
+  </nav>
+
+  <!-- 分栏内容 -->
+  <!-- 兴趣爱好页面 -->
+  <section id="hobbies">
+    <h2>兴趣爱好</h2>
+    <div>
+      <img src="hobby1.jpg" alt="散步">
+      <p>散步</p>
+    </div>
+    <div>
+      <img src="hobby2.jpg" alt="阅读">
+      <p>阅读</p>
+    </div>
+  </section>
+
+  <!-- 计算机网络课表页面 -->
+  <section id="schedule">
+    <h2>2024–2025年度第二学期 机械科学与工程学院</h2>
+    <p>佘文勇（2004010004）副教授 课堂课表</p>
+    <table>
+      <thead>
+        <tr>
+          <th>课程名称</th>
+          <th>课程代码</th>
+          <th>课堂名称</th>
+          <th>班级名称</th>
+          <th>成绩录入院系</th>
+          <th>课堂负责人</th>
+          <th>星期</th>
+          <th>节次</th>
+          <th>周次</th>
+          <th>教室</th>
+          <th>任课教师</th>
+          <th>课时数</th>
+          <th>学生数</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="4">计算机网络技术及应用</td>
+          <td rowspan="4">MESE5361</td>
+          <td rowspan="4">轮机2401-2</td>
+          <td>船舶与海洋工程202103班</td>
+          <td rowspan="4">机械科学与工程学院</td>
+          <td rowspan="4">佘文勇</td>
+          <td>星期一</td>
+          <td>5 ~ 6</td>
+          <td>1 ~ 6</td>
+          <td>东九楼D406</td>
+          <td>佘文勇（副教授）</td>
+          <td>12</td>
+          <td>42</td>
+        </tr>
+        <tr>
+          <td>船舶与海洋工程202202班</td>
+          <td>星期三</td>
+          <td>3 ~ 4</td>
+          <td>1 ~ 6</td>
+          <td>东九楼D406</td>
+          <td>佘文勇（副教授）</td>
+          <td>12</td>
+          <td>42</td>
+        </tr>
+        <tr>
+          <td>船舶与海洋工程202302班<br>轮机工程202401班<br>轮机工程202402班</td>
+          <td>星期四</td>
+          <td>9 ~ 12</td>
+          <td>3 ~ 3</td>
+          <td>计算机开放实验室（工程实践创新中心A座）</td>
+          <td>佘文勇（副教授）</td>
+          <td>4</td>
+          <td>42</td>
+        </tr>
+        <tr>
+          <td>船舶与海洋工程202302班<br>轮机工程202401班<br>轮机工程202402班</td>
+          <td>星期四</td>
+          <td>9 ~ 12</td>
+          <td>5 ~ 5</td>
+          <td>计算机开放实验室（工程实践创新中心A座）</td>
+          <td>佘文勇（副教授）</td>
+          <td>4</td>
+          <td>42</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="10"></td>
+          <td>合计</td>
+          <td>32</td>
+          <td>42</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+
+  <!-- 调查表页面 -->
+  <section id="survey">
+    <h2>申请表</h2>
+    <form>
+      <label for="name">姓名:</label>
+      <input type="text" id="name" placeholder="请输入姓名">
+      <label for="position">感兴趣的职位：</label><br>
+      <input type="radio" id="webDesign" name="position" value="Web设计人员">
+      <label for="webDesign">Web设计人员</label>
+      <input type="radio" id="webManager" name="position" value="Web管理人员">
+      <label for="webManager">Web管理人员</label>
+      <input type="radio" id="webDeveloper" name="position" value="Web开发人员">
+      <label for="webDeveloper">Web开发人员</label><br>
+      <label for="requirements">其他要求：</label><br>
+      <textarea id="requirements" placeholder="包括薪水待遇、工作地点等。"></textarea>
+      <input type="checkbox" id="confirm" checked>
+      <label for="confirm">发送确认消息</label><br>
+      <label for="experience">经验</label>
+      <select id="experience">
+        <option value="无经验">无经验</option>
+        <option value="1-2年">1-2年</option>
+        <option value="3-5年">3-5年</option>
+      </select><br>
+      <input type="submit" value="确定">
+      <input type="reset" value="重置">
+    </form>
+  </section>
+
+  <!-- JavaScript演示页面 -->
+  <section id="js-demo">
+    <h2>JavaScript演示</h2>
+    <button onclick="showDialog()">弹出对话框</button>
+    <button onclick="changeBackgroundColor()">改变屏幕背景色</button>
+    <button onclick="showCurrentTime()">显示当前时间</button>
+    <p id="time"></p>
+  </section>
+
+  <script>
+    function showDialog() {
+      alert("这是一个对话框！");
+    }
+
+    function changeBackgroundColor() {
+      document.body.style.backgroundColor = getRandomColor();
+    }
+
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    function showCurrentTime() {
+      const now = new Date();
+      const time = now.toLocaleTimeString();
+      document.getElementById('time').innerHTML = `当前时间：${time}`;
+    }
+  </script>
+</body>
+
+</html>
